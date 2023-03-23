@@ -55,10 +55,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:background="@drawable/input_background"
             android:inputType="text"
             android:hint="fakeFriend0999"
             android:drawablePadding="10dp"
             android:drawableTint="#7149C6"
+            android:padding="10dp"
             android:drawableLeft="@drawable/userbox"
 
             />
@@ -69,6 +71,8 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:drawableTint="#7149C6"
+            android:padding="10dp"
+            android:background="@drawable/input_background"
             android:inputType="numberPassword"
             android:hint="*************"
             android:drawableLeft="@drawable/lock"

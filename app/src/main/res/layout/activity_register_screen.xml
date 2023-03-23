@@ -16,7 +16,6 @@
         android:clickable="true"
         android:id="@+id/RegBackButton"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="50dp"
         android:background="@drawable/arrow_back"
         android:backgroundTint="#7149C6" />
 
@@ -25,7 +24,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:gravity="center"
-        android:layout_centerInParent="true"
+        android:layout_marginVertical="100dp"
         >
         <TextView
             android:layout_width="match_parent"
@@ -34,13 +33,14 @@
             android:text="REGISTER"
             android:textStyle="bold"
             android:textAlignment="center"
-
             android:textColor="#7149C6"/>
+<!--        Username-->
         <EditText
             android:id="@+id/RegUsername"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
+            android:textSize="20dp"
+            android:background="@drawable/input_background"
             android:ems="10"
             android:drawableTint="#7149C6"
             android:hint="Username"
@@ -49,25 +49,27 @@
             android:drawablePadding="10dp"
             android:layout_marginBottom="10dp"
             android:inputType="text" />
-
+<!--Password-->
         <EditText
             android:id="@+id/RegPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:drawableLeft="@drawable/lock"
             android:drawablePadding="10dp"
+            android:background="@drawable/input_background"
             android:drawableTint="#7149C6"
-            android:textSize="30dp"
+            android:textSize="20dp"
             android:layout_marginBottom="10dp"
             android:padding="20dp"
             android:ems="10"
             android:hint="password"
             android:inputType="numberPassword" />
-
+<!--Confirm password-->
         <EditText
             android:id="@+id/ConfirmRegPassword"
             android:layout_width="wrap_content"
-            android:textSize="30dp"
+            android:textSize="20dp"
+            android:background="@drawable/input_background"
             android:drawableTint="#7149C6"
             android:padding="20dp"
             android:layout_height="wrap_content"
@@ -77,6 +79,16 @@
             android:hint="Confirm password"
             android:layout_marginBottom="10dp"
             android:inputType="numberPassword" />
+<!--        Date Birthday-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birthday: "
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"/>
+
+<!--Submit Button-->
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
