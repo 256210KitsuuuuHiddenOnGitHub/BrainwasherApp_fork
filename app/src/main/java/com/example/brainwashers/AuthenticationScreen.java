@@ -25,7 +25,7 @@ public class AuthenticationScreen extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(AuthenticationScreen.this, RegisterScreen.class);
+                Intent i = new Intent(view.getContext(), RegisterScreen.class);
                 startActivity(i);
             }
         });
@@ -33,7 +33,7 @@ public class AuthenticationScreen extends AppCompatActivity {
         guest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(AuthenticationScreen.this,Guest.class);
+                Intent i = new Intent(view.getContext(),Guest.class);
                 startActivity(i);
             }
         });
