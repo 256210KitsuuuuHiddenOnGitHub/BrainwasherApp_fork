@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#7149C6"
+        android:text="Profile Information"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+<!--        Inputs and button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <!--This is for Username -->
+            <EditText
+                android:id="@+id/EdituserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:drawableLeft="@drawable/userbox"
+                android:drawablePadding="20dp"
+                android:hint="Username" />
+            <!--This is for Password-->
+            <EditText
+                android:id="@+id/EditPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:drawableLeft="@drawable/lock"
+                android:drawablePadding="20dp"
+                android:hint="password"
+                android:inputType="textPassword" />
+            <!--This is for submit button-->
+            <Button
+                android:id="@+id/SubmitBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit Changes"
+                android:layout_marginTop="20dp"
+           />
+        </LinearLayout>
+<!--Logout button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:id="@+id/ProfileLogut"
+                />
+        </LinearLayout>
+
+
+</RelativeLayout>
